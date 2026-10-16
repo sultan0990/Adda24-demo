@@ -1,0 +1,6 @@
+/* Keep the page from scrolling when a visitor scrolls inside the chat panel. */
+.chatbot{max-height:min(560px,calc(100vh - 190px));display:flex;flex-direction:column}
+.chatbot header,.chat-order{flex:none}
+.chat-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#a94931 #f8f2e8}
+.chat-body::-webkit-scrollbar{width:5px}.chat-body::-webkit-scrollbar-thumb{background:#a94931;border-radius:10px}
+@media(max-width:800px){.chatbot{max-height:calc(100vh - 185px)}}
